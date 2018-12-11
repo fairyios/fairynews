@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C982AC49DADF626F9D1DEA /* Pods_fairynewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329FA695DD966417AC30C9F5 /* Pods_fairynewsUITests.framework */; };
 		2CC2B49421B8C26600FB4398 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC2B49321B8C26600FB4398 /* AppDelegate.swift */; };
 		2CC2B49621B8C26600FB4398 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC2B49521B8C26600FB4398 /* ViewController.swift */; };
 		2CC2B49921B8C26600FB4398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC2B49721B8C26600FB4398 /* Main.storyboard */; };
@@ -21,6 +22,8 @@
 		2CC2B4CA21BA4CBC00FB4398 /* HuoshanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC2B4C921BA4CBC00FB4398 /* HuoshanViewController.swift */; };
 		2CC2B4CC21BA4CD400FB4398 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC2B4CB21BA4CD400FB4398 /* MineViewController.swift */; };
 		2CC2B4CE21BA697900FB4398 /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC2B4CD21BA697900FB4398 /* MyTabBar.swift */; };
+		36EC89C52E60201253BA0D23 /* Pods_fairynewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B3C487DE3EB7F3D0751E58 /* Pods_fairynewsTests.framework */; };
+		5FDBD9753389110DF386F797 /* Pods_fairynews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176940C73B97F640EB6DCD9A /* Pods_fairynews.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		176940C73B97F640EB6DCD9A /* Pods_fairynews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fairynews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19EA3207E22373AFC2F0CE92 /* Pods-fairynewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fairynewsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fairynewsUITests/Pods-fairynewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2CC2B49021B8C26600FB4398 /* fairynews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fairynews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC2B49321B8C26600FB4398 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CC2B49521B8C26600FB4398 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +66,13 @@
 		2CC2B4C921BA4CBC00FB4398 /* HuoshanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuoshanViewController.swift; sourceTree = "<group>"; };
 		2CC2B4CB21BA4CD400FB4398 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		2CC2B4CD21BA697900FB4398 /* MyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
+		2DC107D9B3897A78CCC07821 /* Pods-fairynewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fairynewsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fairynewsUITests/Pods-fairynewsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		329FA695DD966417AC30C9F5 /* Pods_fairynewsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fairynewsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		476C3CE89512B887A10E8BC3 /* Pods-fairynewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fairynewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fairynewsTests/Pods-fairynewsTests.release.xcconfig"; sourceTree = "<group>"; };
+		A556FBA75A78C5D7EB6BF3C0 /* Pods-fairynews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fairynews.release.xcconfig"; path = "Pods/Target Support Files/Pods-fairynews/Pods-fairynews.release.xcconfig"; sourceTree = "<group>"; };
+		C5492C1291A0A83F10A28FFC /* Pods-fairynews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fairynews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fairynews/Pods-fairynews.debug.xcconfig"; sourceTree = "<group>"; };
+		C7B3C487DE3EB7F3D0751E58 /* Pods_fairynewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fairynewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA92FF76C8563265334A620D /* Pods-fairynewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fairynewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fairynewsTests/Pods-fairynewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FDBD9753389110DF386F797 /* Pods_fairynews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36EC89C52E60201253BA0D23 /* Pods_fairynewsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,12 +96,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C982AC49DADF626F9D1DEA /* Pods_fairynewsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		103285F69AF220CAD21168E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5492C1291A0A83F10A28FFC /* Pods-fairynews.debug.xcconfig */,
+				A556FBA75A78C5D7EB6BF3C0 /* Pods-fairynews.release.xcconfig */,
+				EA92FF76C8563265334A620D /* Pods-fairynewsTests.debug.xcconfig */,
+				476C3CE89512B887A10E8BC3 /* Pods-fairynewsTests.release.xcconfig */,
+				19EA3207E22373AFC2F0CE92 /* Pods-fairynewsUITests.debug.xcconfig */,
+				2DC107D9B3897A78CCC07821 /* Pods-fairynewsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2CC2B48721B8C26600FB4398 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +123,8 @@
 				2CC2B4A721B8C26800FB4398 /* fairynewsTests */,
 				2CC2B4B221B8C26900FB4398 /* fairynewsUITests */,
 				2CC2B49121B8C26600FB4398 /* Products */,
+				103285F69AF220CAD21168E7 /* Pods */,
+				7F95450BD471AD94A2152E0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +176,16 @@
 			path = fairynewsUITests;
 			sourceTree = "<group>";
 		};
+		7F95450BD471AD94A2152E0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				176940C73B97F640EB6DCD9A /* Pods_fairynews.framework */,
+				C7B3C487DE3EB7F3D0751E58 /* Pods_fairynewsTests.framework */,
+				329FA695DD966417AC30C9F5 /* Pods_fairynewsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CC2B4B821B8C26900FB4398 /* Build configuration list for PBXNativeTarget "fairynews" */;
 			buildPhases = (
+				0DA6536257FA8B6BBA21791A /* [CP] Check Pods Manifest.lock */,
 				2CC2B48C21B8C26600FB4398 /* Sources */,
 				2CC2B48D21B8C26600FB4398 /* Frameworks */,
 				2CC2B48E21B8C26600FB4398 /* Resources */,
@@ -170,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CC2B4BB21B8C26900FB4398 /* Build configuration list for PBXNativeTarget "fairynewsTests" */;
 			buildPhases = (
+				3F0FA4A59616E4180F47F74C /* [CP] Check Pods Manifest.lock */,
 				2CC2B4A021B8C26800FB4398 /* Sources */,
 				2CC2B4A121B8C26800FB4398 /* Frameworks */,
 				2CC2B4A221B8C26800FB4398 /* Resources */,
@@ -188,6 +230,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CC2B4BE21B8C26900FB4398 /* Build configuration list for PBXNativeTarget "fairynewsUITests" */;
 			buildPhases = (
+				92D785DE332510F23758F810 /* [CP] Check Pods Manifest.lock */,
 				2CC2B4AB21B8C26900FB4398 /* Sources */,
 				2CC2B4AC21B8C26900FB4398 /* Frameworks */,
 				2CC2B4AD21B8C26900FB4398 /* Resources */,
@@ -271,6 +314,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DA6536257FA8B6BBA21791A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fairynews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F0FA4A59616E4180F47F74C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fairynewsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92D785DE332510F23758F810 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fairynewsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2CC2B48C21B8C26600FB4398 /* Sources */ = {
@@ -458,6 +570,7 @@
 		};
 		2CC2B4B921B8C26900FB4398 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5492C1291A0A83F10A28FFC /* Pods-fairynews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -476,6 +589,7 @@
 		};
 		2CC2B4BA21B8C26900FB4398 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A556FBA75A78C5D7EB6BF3C0 /* Pods-fairynews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -494,6 +608,7 @@
 		};
 		2CC2B4BC21B8C26900FB4398 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA92FF76C8563265334A620D /* Pods-fairynewsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +630,7 @@
 		};
 		2CC2B4BD21B8C26900FB4398 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 476C3CE89512B887A10E8BC3 /* Pods-fairynewsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -536,6 +652,7 @@
 		};
 		2CC2B4BF21B8C26900FB4398 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19EA3207E22373AFC2F0CE92 /* Pods-fairynewsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -556,6 +673,7 @@
 		};
 		2CC2B4C021B8C26900FB4398 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DC107D9B3897A78CCC07821 /* Pods-fairynewsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

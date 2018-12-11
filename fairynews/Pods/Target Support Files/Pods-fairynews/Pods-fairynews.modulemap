@@ -1,0 +1,6 @@
+framework module Pods_fairynews {
+  umbrella header "Pods-fairynews-umbrella.h"
+
+  export *
+  module * { export * }
+}

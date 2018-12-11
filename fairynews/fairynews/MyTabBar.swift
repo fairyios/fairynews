@@ -60,11 +60,6 @@ class MyTabBar: UITabBar {
         debugPrint("[MyTabBar][layoutSubviews]self.subviews.count = \(self.subviews.count)")
         debugPrint("[MyTabBar][layoutSubviews]self.btnPublish.frame.width = \(self.btnPublish.frame.width)")
         
-        // 设置其它按钮的 frame
-//        let btnW = width * 0.2
-//        let btnH =  self.frame.height
-//        let btnY = 0
-        
         let tabBarItem = self.subviews.filter { return $0.isKind(of: NSClassFromString("UITabBarButton")!) }
         debugPrint("[MyTabBar][layoutSubviews] tabBarItem.count = \( tabBarItem.count)")
         
@@ -75,27 +70,16 @@ class MyTabBar: UITabBar {
         let itemWidth = CGFloat((self.frame.width - self.btnPublish.frame.width) / CGFloat(tabBarItem.count))
         
         for (index, item) in tabBarItem.enumerated() {
-            
             var x: CGFloat = 0.0
             if(index >= publishIndex) {
                 x = itemWidth * CGFloat(index) + self.btnPublish.frame.width
             } else {
                 x = itemWidth * CGFloat(index)
             }
-            
-            debugPrint("[MyTabBar][layoutSubviews][for (index, item) in tabBarItem.enumerated()] x = \(x)")
-            
             item.frame = CGRect(x: x, y: 0, width: itemWidth, height: self.frame.height)
         }
     }
     
     
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
 
 }

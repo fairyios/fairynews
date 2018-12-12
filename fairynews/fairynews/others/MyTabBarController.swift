@@ -33,6 +33,7 @@ final class MyTabBarController: UITabBarController {
         //tabBar 是 readonly 属性，不能直接修改，利用 KVC 把 readonly 属性 改过来
         //self.setValue(MyTabBar.self, forKey: "tabBar")// MyTabBar.self 会报错
         self.setValue(MyTabBar(), forKey: "tabBar")
+        self.selectedIndex = 3
     }
     
     

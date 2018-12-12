@@ -38,6 +38,8 @@ class MyTabBar: UITabBar {
         self.backgroundColor = UIColor.white
         //self.backgroundImage = nil
         //self.shadowImage = nil
+        
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

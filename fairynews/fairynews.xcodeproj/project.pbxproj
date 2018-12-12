@@ -22,6 +22,7 @@
 		2CC2B4CA21BA4CBC00FB4398 /* HuoshanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC2B4C921BA4CBC00FB4398 /* HuoshanViewController.swift */; };
 		2CC2B4CC21BA4CD400FB4398 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC2B4CB21BA4CD400FB4398 /* MineViewController.swift */; };
 		2CC2B4CE21BA697900FB4398 /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC2B4CD21BA697900FB4398 /* MyTabBar.swift */; };
+		2CC8923821C0A8FC0082334D /* ConstDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC8923721C0A8FC0082334D /* ConstDefine.swift */; };
 		36EC89C52E60201253BA0D23 /* Pods_fairynewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B3C487DE3EB7F3D0751E58 /* Pods_fairynewsTests.framework */; };
 		5FDBD9753389110DF386F797 /* Pods_fairynews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176940C73B97F640EB6DCD9A /* Pods_fairynews.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		2CC2B4C921BA4CBC00FB4398 /* HuoshanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuoshanViewController.swift; sourceTree = "<group>"; };
 		2CC2B4CB21BA4CD400FB4398 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		2CC2B4CD21BA697900FB4398 /* MyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
+		2CC8923721C0A8FC0082334D /* ConstDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstDefine.swift; sourceTree = "<group>"; };
 		2DC107D9B3897A78CCC07821 /* Pods-fairynewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fairynewsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fairynewsUITests/Pods-fairynewsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		329FA695DD966417AC30C9F5 /* Pods_fairynewsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fairynewsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		476C3CE89512B887A10E8BC3 /* Pods-fairynewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fairynewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fairynewsTests/Pods-fairynewsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,19 +143,13 @@
 		2CC2B49221B8C26600FB4398 /* fairynews */ = {
 			isa = PBXGroup;
 			children = (
-				2CC2B49321B8C26600FB4398 /* AppDelegate.swift */,
-				2CC2B49521B8C26600FB4398 /* ViewController.swift */,
-				2CC2B49721B8C26600FB4398 /* Main.storyboard */,
+				2CC8922A21C0A1F70082334D /* others */,
+				2CC8922921C0A1E90082334D /* video */,
+				2CC8922821C0A1E30082334D /* mine */,
+				2CC8922721C0A1DA0082334D /* huoshan */,
+				2CC8922621C0A1C30082334D /* Home */,
 				2CC2B49A21B8C26800FB4398 /* Assets.xcassets */,
-				2CC2B49C21B8C26800FB4398 /* LaunchScreen.storyboard */,
 				2CC2B49F21B8C26800FB4398 /* Info.plist */,
-				2CC2B4C121B90D8300FB4398 /* MyTabBarController.swift */,
-				2CC2B4C321B90DE900FB4398 /* MyNavigationController.swift */,
-				2CC2B4C521BA4C8F00FB4398 /* HomeViewController.swift */,
-				2CC2B4C721BA4CA800FB4398 /* VideoViewController.swift */,
-				2CC2B4C921BA4CBC00FB4398 /* HuoshanViewController.swift */,
-				2CC2B4CB21BA4CD400FB4398 /* MineViewController.swift */,
-				2CC2B4CD21BA697900FB4398 /* MyTabBar.swift */,
 			);
 			path = fairynews;
 			sourceTree = "<group>";
@@ -175,6 +171,158 @@
 			);
 			path = fairynewsUITests;
 			sourceTree = "<group>";
+		};
+		2CC8922621C0A1C30082334D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2CC8923521C0A2440082334D /* controller */,
+				2CC8923421C0A2440082334D /* view */,
+				2CC8923621C0A2440082334D /* model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2CC8922721C0A1DA0082334D /* huoshan */ = {
+			isa = PBXGroup;
+			children = (
+				2CC8923121C0A23F0082334D /* controller */,
+				2CC8923321C0A23F0082334D /* view */,
+				2CC8923221C0A23F0082334D /* model */,
+			);
+			path = huoshan;
+			sourceTree = "<group>";
+		};
+		2CC8922821C0A1E30082334D /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				2CC8922B21C0A20A0082334D /* controller */,
+				2CC8922D21C0A2190082334D /* view */,
+				2CC8922C21C0A2120082334D /* model */,
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
+		2CC8922921C0A1E90082334D /* video */ = {
+			isa = PBXGroup;
+			children = (
+				2CC8922E21C0A2370082334D /* controller */,
+				2CC8923021C0A2370082334D /* view */,
+				2CC8922F21C0A2370082334D /* model */,
+			);
+			path = video;
+			sourceTree = "<group>";
+		};
+		2CC8922A21C0A1F70082334D /* others */ = {
+			isa = PBXGroup;
+			children = (
+				2CC2B49C21B8C26800FB4398 /* LaunchScreen.storyboard */,
+				2CC2B49721B8C26600FB4398 /* Main.storyboard */,
+				2CC2B49521B8C26600FB4398 /* ViewController.swift */,
+				2CC2B49321B8C26600FB4398 /* AppDelegate.swift */,
+				2CC2B4C121B90D8300FB4398 /* MyTabBarController.swift */,
+				2CC2B4CD21BA697900FB4398 /* MyTabBar.swift */,
+				2CC2B4C321B90DE900FB4398 /* MyNavigationController.swift */,
+				2CC8923721C0A8FC0082334D /* ConstDefine.swift */,
+			);
+			path = others;
+			sourceTree = "<group>";
+		};
+		2CC8922B21C0A20A0082334D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CC2B4CB21BA4CD400FB4398 /* MineViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		2CC8922C21C0A2120082334D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		2CC8922D21C0A2190082334D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		2CC8922E21C0A2370082334D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CC2B4C721BA4CA800FB4398 /* VideoViewController.swift */,
+			);
+			name = controller;
+			path = fairynews/mine/controller;
+			sourceTree = SOURCE_ROOT;
+		};
+		2CC8922F21C0A2370082334D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			path = fairynews/mine/model;
+			sourceTree = SOURCE_ROOT;
+		};
+		2CC8923021C0A2370082334D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			path = fairynews/mine/view;
+			sourceTree = SOURCE_ROOT;
+		};
+		2CC8923121C0A23F0082334D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CC2B4C921BA4CBC00FB4398 /* HuoshanViewController.swift */,
+			);
+			name = controller;
+			path = fairynews/mine/controller;
+			sourceTree = SOURCE_ROOT;
+		};
+		2CC8923221C0A23F0082334D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			path = fairynews/mine/model;
+			sourceTree = SOURCE_ROOT;
+		};
+		2CC8923321C0A23F0082334D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			path = fairynews/mine/view;
+			sourceTree = SOURCE_ROOT;
+		};
+		2CC8923421C0A2440082334D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			path = fairynews/mine/view;
+			sourceTree = SOURCE_ROOT;
+		};
+		2CC8923521C0A2440082334D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CC2B4C521BA4C8F00FB4398 /* HomeViewController.swift */,
+			);
+			name = controller;
+			path = fairynews/mine/controller;
+			sourceTree = SOURCE_ROOT;
+		};
+		2CC8923621C0A2440082334D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			path = fairynews/mine/model;
+			sourceTree = SOURCE_ROOT;
 		};
 		7F95450BD471AD94A2152E0B /* Frameworks */ = {
 			isa = PBXGroup;
@@ -389,6 +537,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC8923821C0A8FC0082334D /* ConstDefine.swift in Sources */,
 				2CC2B4C621BA4C8F00FB4398 /* HomeViewController.swift in Sources */,
 				2CC2B4C221B90D8300FB4398 /* MyTabBarController.swift in Sources */,
 				2CC2B4C821BA4CA800FB4398 /* VideoViewController.swift in Sources */,

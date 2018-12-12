@@ -23,6 +23,7 @@
 		2CC2B4CC21BA4CD400FB4398 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC2B4CB21BA4CD400FB4398 /* MineViewController.swift */; };
 		2CC2B4CE21BA697900FB4398 /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC2B4CD21BA697900FB4398 /* MyTabBar.swift */; };
 		2CC8923821C0A8FC0082334D /* ConstDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC8923721C0A8FC0082334D /* ConstDefine.swift */; };
+		2CC8923F21C0BDC60082334D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC8923E21C0BDC60082334D /* UIColor+Extension.swift */; };
 		36EC89C52E60201253BA0D23 /* Pods_fairynewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B3C487DE3EB7F3D0751E58 /* Pods_fairynewsTests.framework */; };
 		5FDBD9753389110DF386F797 /* Pods_fairynews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176940C73B97F640EB6DCD9A /* Pods_fairynews.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		2CC2B4CB21BA4CD400FB4398 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		2CC2B4CD21BA697900FB4398 /* MyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
 		2CC8923721C0A8FC0082334D /* ConstDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstDefine.swift; sourceTree = "<group>"; };
+		2CC8923E21C0BDC60082334D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		2DC107D9B3897A78CCC07821 /* Pods-fairynewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fairynewsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fairynewsUITests/Pods-fairynewsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		329FA695DD966417AC30C9F5 /* Pods_fairynewsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fairynewsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		476C3CE89512B887A10E8BC3 /* Pods-fairynewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fairynewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fairynewsTests/Pods-fairynewsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		2CC2B49221B8C26600FB4398 /* fairynews */ = {
 			isa = PBXGroup;
 			children = (
+				2CC8923921C0BD6A0082334D /* main */,
 				2CC8922A21C0A1F70082334D /* others */,
 				2CC8922921C0A1E90082334D /* video */,
 				2CC8922821C0A1E30082334D /* mine */,
@@ -323,6 +326,46 @@
 			name = model;
 			path = fairynews/mine/model;
 			sourceTree = SOURCE_ROOT;
+		};
+		2CC8923921C0BD6A0082334D /* main */ = {
+			isa = PBXGroup;
+			children = (
+				2CC8923A21C0BD810082334D /* extension */,
+				2CC8923B21C0BD890082334D /* controller */,
+				2CC8923C21C0BD900082334D /* model */,
+				2CC8923D21C0BD960082334D /* view */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		2CC8923A21C0BD810082334D /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				2CC8923E21C0BDC60082334D /* UIColor+Extension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		2CC8923B21C0BD890082334D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		2CC8923C21C0BD900082334D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		2CC8923D21C0BD960082334D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
 		};
 		7F95450BD471AD94A2152E0B /* Frameworks */ = {
 			isa = PBXGroup;
@@ -563,6 +606,7 @@
 				2CC8923821C0A8FC0082334D /* ConstDefine.swift in Sources */,
 				2CC2B4C621BA4C8F00FB4398 /* HomeViewController.swift in Sources */,
 				2CC2B4C221B90D8300FB4398 /* MyTabBarController.swift in Sources */,
+				2CC8923F21C0BDC60082334D /* UIColor+Extension.swift in Sources */,
 				2CC2B4C821BA4CA800FB4398 /* VideoViewController.swift in Sources */,
 				2CC2B4CC21BA4CD400FB4398 /* MineViewController.swift in Sources */,
 				2CC2B4CA21BA4CBC00FB4398 /* HuoshanViewController.swift in Sources */,

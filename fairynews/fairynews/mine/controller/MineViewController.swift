@@ -28,6 +28,7 @@ final class MineViewController: UITableViewController {
         debugPrint("[MineViewController][func viewDidLoad()]self.tableView.headerView(forSection: 0) = \(String(describing: self.tableView.headerView(forSection: 0)))")
         
         self.tableView.tableFooterView = UIView()
+        self.tableView.backgroundColor = UIColor.globalBackgroundColor()
     }
     
     
@@ -88,7 +89,7 @@ extension MineViewController {
         debugPrint("[MineViewController][节点的header的view视图重构]tableView.frame.width = \(tableView.frame.width)")
         debugPrint("[MineViewController][节点的header的view视图重构]tableView.headerView(forSection: section) = \(String(describing: tableView.headerView(forSection: section)))")
         let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: self.heightForHeaderInSection))
-        view.backgroundColor = UIColor.gray
+        view.backgroundColor = UIColor.globalBackgroundColor() //UIColor.gray
         return view
     }
     

@@ -34,7 +34,8 @@ final class MineViewController: UITableViewController{
         
         self.tableView.tableFooterView = UIView()
         self.tableView.backgroundColor = UIColor.globalBackgroundColor()
-        self.tableView.register(MineTableCellView.self, forCellReuseIdentifier: String(describing: MineTableCellView.self))
+        self.tableView.register(MineDefaultTableCell.self, forCellReuseIdentifier: String(describing: MineDefaultTableCell.self))
+        self.tableView.register(MineGuanzhuTableCell.self, forCellReuseIdentifier: String(describing: MineGuanzhuTableCell.self))
         
         _apiService.loadMyCellData{(apiData: ApiDataMyCellModel?) in
             debugPrint("[MineViewController][func viewDidAppear()] 网络请求完成")
@@ -127,6 +128,37 @@ extension MineViewController {
         return self.sections[section].count
     }
     
+    
+    /// 单元格的行高
+    ///
+    /// - Parameters:
+    ///   - tableView: tableView description
+    ///   - indexPath: indexPath description
+    /// - Returns: return value description
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if(indexPath.section == 0 && indexPath.row == 0) {
+            return 100
+        }
+        
+        
+        let superHeight = super.tableView(tableView, heightForRowAt: indexPath)
+        debugPrint("[MineViewController][单元格的行高]superHeight = \(superHeight)")
+        
+        return superHeight
+    }
+    
+    
+    /// 单元格选中了第几行
+    ///
+    /// - Parameters:
+    ///   - tableView: <#tableView description#>
+    ///   - indexPath: <#indexPath description#>
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        //取消选择行
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     /// 单元格的显示内容
     ///
     /// - Parameters:
@@ -137,9 +169,17 @@ extension MineViewController {
         let sectionModel = self.sections[indexPath.section]
         let sectionRow = sectionModel[indexPath.row]
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MineTableCellView.self), for: indexPath) as! MineTableCellView
-        cell.leftLabel.text = sectionRow.text
-        cell.rightLabel.text = sectionRow.grey_text
+        if indexPath.section == 0 && indexPath.row == 0 {
+            let guanzhu = MineGuanzhuTableCell(style: .default, reuseIdentifier: String(describing: MineGuanzhuTableCell.self))
+            guanzhu.firstLine.leftLabel.text = sectionRow.text
+            guanzhu.firstLine.rightLabel.text = sectionRow.grey_text
+            
+            return guanzhu
+        }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MineDefaultTableCell.self), for: indexPath) as! MineDefaultTableCell
+        cell.firstLine.leftLabel.text = sectionRow.text
+        cell.firstLine.rightLabel.text = sectionRow.grey_text
         return cell
     }
 }

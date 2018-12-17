@@ -1,5 +1,5 @@
 //
-//  MineCellView.swift
+//  MineDefaultTableCellRowView.swift
 //  fairynews
 //
 //  Created by Fairy on 2018/12/17.
@@ -9,9 +9,7 @@
 import UIKit
 import SnapKit
 
-final class MineTableCellView : UITableViewCell {
-    
-    
+final class MineDefaultTableCellRowView: UIView {
     /// 左边的label
     public lazy var leftLabel: UILabel = {
         var label = UILabel()
@@ -37,8 +35,10 @@ final class MineTableCellView : UITableViewCell {
         return imgView
     }()
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         
         //左边的label
         self.addSubview(self.leftLabel)

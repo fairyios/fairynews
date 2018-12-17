@@ -7,6 +7,8 @@ target 'fairynews' do
 
   # Pods for fairynews
   pod 'SnapKit' #, '~> 4.0.0'
+  pod 'Alamofire' #, '~> 5.0.0.beta.1'
+  
 
   target 'fairynewsTests' do
     inherit! :search_paths

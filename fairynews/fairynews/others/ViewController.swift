@@ -10,11 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
+        
+        
+        //JSONDecoder().decode(Decodable.Protocol, from: T##Data)
+        //JSONEncoder().
     }
-
 
 }
 

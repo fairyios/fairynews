@@ -8,14 +8,19 @@
 
 import UIKit
 
-final class MineViewController: UITableViewController {
+final class MineViewController: UITableViewController{
+    
+    private let _apiService: IMineApiService = MineApiService() as IMineApiService
 
     //"Attribute.DefineTableViewCell" 获取类名
     //private let reuseIdentifier2: String = NSStringFromClass(UITableViewCell.self)
     //"DefineTableViewCell" 获取类名
     private let reuseIdentifier: String = String(describing: UITableViewCell.self)
     
-    private let heightForHeaderInSection: CGFloat = 40
+    private let heightForHeaderInSection: CGFloat = 15
+    
+    
+    private var sections: [[MyCellModel]] = []
     
     
     
@@ -29,6 +34,22 @@ final class MineViewController: UITableViewController {
         
         self.tableView.tableFooterView = UIView()
         self.tableView.backgroundColor = UIColor.globalBackgroundColor()
+        
+        _apiService.loadMyCellData{(apiData: ApiDataMyCellModel?) in
+            debugPrint("[MineViewController][func viewDidAppear()] 网络请求完成")
+            
+            var firstSection = apiData?.sections.first!
+            var guanzhu = MyCellModel()
+            guanzhu.grey_text = ""
+            guanzhu.text = "我的关注"
+            guanzhu.tip_new = 0
+            guanzhu.url = ""
+            firstSection?.insert(guanzhu, at: 0)
+            
+            self.sections = (apiData?.sections)!
+            self.sections[0] = firstSection!
+            self.tableView.reloadData()
+        }
     }
     
     
@@ -39,6 +60,7 @@ final class MineViewController: UITableViewController {
         super.viewDidAppear(animated)
         
         debugPrint("[MineViewController][func viewDidAppear()]self.tableView.headerView(forSection: 0) = \(String(describing: self.tableView.headerView(forSection: 0)))")
+        
         
     }
 }
@@ -52,7 +74,7 @@ extension MineViewController {
     /// - Parameter tableView: tableView description
     /// - Returns: return value description
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return self.sections.count
     }
     
     
@@ -100,7 +122,7 @@ extension MineViewController {
     ///   - section: section description
     /// - Returns: return value description
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return self.sections[section].count
     }
     
     /// 单元格的显示内容
@@ -110,8 +132,11 @@ extension MineViewController {
     ///   - indexPath: indexPath description
     /// - Returns: return value description
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let sectionModel = self.sections[indexPath.section]
+        let sectionRow = sectionModel[indexPath.row]
+        
         let cell = UITableViewCell(style: .default, reuseIdentifier: self.reuseIdentifier)
-        cell.textLabel?.text = "测试"
+        cell.textLabel?.text = sectionRow.text
         return cell
     }
 }

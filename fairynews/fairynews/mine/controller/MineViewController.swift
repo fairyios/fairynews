@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class MineViewController: UITableViewController{
+final class MineViewController: UITableViewController {
     
     private let _apiService: IMineApiService = MineApiService() as IMineApiService
 
@@ -20,7 +20,7 @@ final class MineViewController: UITableViewController{
     private let heightForHeaderInSection: CGFloat = 15
     
     
-    private var sections: [[MyCellModel]] = []
+    private var sections: [[ApiDtoMine.MyTableCellDto]] = []
     
     
     
@@ -34,13 +34,13 @@ final class MineViewController: UITableViewController{
         
         self.tableView.tableFooterView = UIView()
         self.tableView.backgroundColor = UIColor.globalBackgroundColor()
-        self.tableView.register(MineDefaultTableCell.self, forCellReuseIdentifier: String(describing: MineDefaultTableCell.self))
-        self.tableView.register(MineGuanzhuTableCell.self, forCellReuseIdentifier: String(describing: MineGuanzhuTableCell.self))
+        self.tableView.register(MineView.DefaultTableCell.self, forCellReuseIdentifier: String(describing: MineView.DefaultTableCell.self))
+        self.tableView.register(MineView.GuanzhuTableCell.self, forCellReuseIdentifier: String(describing: MineView.GuanzhuTableCell.self))
         
-        _apiService.loadMyCellData{(apiData: ApiDataMyCellModel?) in
+        _apiService.loadMyCellData{(apiData: ApiDtoMine.MyTableCellOutDto?) in
             debugPrint("[MineViewController][func viewDidAppear()] 网络请求完成")
             
-            var guanzhu = MyCellModel()
+            var guanzhu = ApiDtoMine.MyTableCellDto()
             guanzhu.grey_text = ""
             guanzhu.text = "我的关注"
             guanzhu.tip_new = 0
@@ -151,8 +151,8 @@ extension MineViewController {
     /// 单元格选中了第几行
     ///
     /// - Parameters:
-    ///   - tableView: <#tableView description#>
-    ///   - indexPath: <#indexPath description#>
+    ///   - tableView: tableView description
+    ///   - indexPath: indexPath description
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         //取消选择行
@@ -170,14 +170,14 @@ extension MineViewController {
         let sectionRow = sectionModel[indexPath.row]
         
         if indexPath.section == 0 && indexPath.row == 0 {
-            let guanzhu = MineGuanzhuTableCell(style: .default, reuseIdentifier: String(describing: MineGuanzhuTableCell.self))
+            let guanzhu = MineView.GuanzhuTableCell(style: .default, reuseIdentifier: String(describing: MineView.GuanzhuTableCell.self))
             guanzhu.firstLine.leftLabel.text = sectionRow.text
             guanzhu.firstLine.rightLabel.text = sectionRow.grey_text
             
             return guanzhu
         }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MineDefaultTableCell.self), for: indexPath) as! MineDefaultTableCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MineView.DefaultTableCell.self), for: indexPath) as! MineView.DefaultTableCell
         cell.firstLine.leftLabel.text = sectionRow.text
         cell.firstLine.rightLabel.text = sectionRow.grey_text
         return cell

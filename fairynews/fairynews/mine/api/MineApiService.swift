@@ -12,7 +12,7 @@ public protocol IMineApiService {
     
     // MARK: - --------------------------------- 我的 mine  ---------------------------------
     // MARK: 我的界面 cell 的数据
-    func loadMyCellData(_ completionHandler: @escaping (_ apiData: ApiDataMyCellModel?) -> ())
+    func loadMyCellData(_ completionHandler: @escaping (_ apiData: ApiDtoMine.MyTableCellOutDto?) -> ())
     // MARK: 我的关注数据
     func loadMyConcern()
 }
@@ -22,7 +22,7 @@ public class MineApiService: IMineApiService {
     
     // MARK: - --------------------------------- 我的 mine  ---------------------------------
     // MARK: 我的界面 cell 的数据
-    public func loadMyCellData(_ completionHandler: @escaping (_ result: ApiDataMyCellModel?) -> ()) {
+    public func loadMyCellData(_ completionHandler: @escaping (_ result: ApiDtoMine.MyTableCellOutDto?) -> ()) {
         let url = ApiConst.baseUrl + "/user/tab/tabs/?"
         let params = ["device_id": ApiConst.deviceId]
         
@@ -43,7 +43,7 @@ public class MineApiService: IMineApiService {
             do {
                 //JSONSerialization.WritingOptions.prettyPrinted
                 let jsonData = try JSONSerialization.data(withJSONObject: responseValue!, options: .prettyPrinted)
-                let apiResult = try JSONDecoder().decode(ApiResult<ApiDataMyCellModel>.self, from: jsonData)
+                let apiResult = try JSONDecoder().decode(ApiResult<ApiDtoMine.MyTableCellOutDto>.self, from: jsonData)
                 
                 //debugPrint(apiResult.data as Any)
                 

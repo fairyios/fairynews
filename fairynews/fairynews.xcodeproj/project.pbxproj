@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		04C982AC49DADF626F9D1DEA /* Pods_fairynewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329FA695DD966417AC30C9F5 /* Pods_fairynewsUITests.framework */; };
-		2C9C868821C79E50007BCA2A /* ApiDataMyCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C868721C79E50007BCA2A /* ApiDataMyCellModel.swift */; };
-		2C9C868A21C7D677007BCA2A /* MineDefaultTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C868921C7D677007BCA2A /* MineDefaultTableCell.swift */; };
-		2C9C868C21C7F3B1007BCA2A /* MineGuanzhuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C868B21C7F3B1007BCA2A /* MineGuanzhuTableCell.swift */; };
-		2C9C868E21C7FE2D007BCA2A /* MineDefaultTableCellRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C868D21C7FE2D007BCA2A /* MineDefaultTableCellRowView.swift */; };
+		2C9C868821C79E50007BCA2A /* ApiDtoMine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C868721C79E50007BCA2A /* ApiDtoMine.swift */; };
+		2C9C868A21C7D677007BCA2A /* MineView+DefaultTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C868921C7D677007BCA2A /* MineView+DefaultTableCell.swift */; };
+		2C9C868C21C7F3B1007BCA2A /* MineView+GuanzhuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C868B21C7F3B1007BCA2A /* MineView+GuanzhuTableCell.swift */; };
+		2C9C868E21C7FE2D007BCA2A /* MineView+DefaultTableCellRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C868D21C7FE2D007BCA2A /* MineView+DefaultTableCellRowView.swift */; };
+		2C9C869121C80204007BCA2A /* ApiDtoMine+MyTableCellDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C869021C80204007BCA2A /* ApiDtoMine+MyTableCellDto.swift */; };
+		2C9C869321C802BC007BCA2A /* ApiDtoMine+MyGuanzhuDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C869221C802BC007BCA2A /* ApiDtoMine+MyGuanzhuDto.swift */; };
+		2C9C869521C805A3007BCA2A /* MineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C869421C805A3007BCA2A /* MineView.swift */; };
+		2C9C869721C80774007BCA2A /* IApiDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C869621C80774007BCA2A /* IApiDto.swift */; };
 		2CC2B49421B8C26600FB4398 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC2B49321B8C26600FB4398 /* AppDelegate.swift */; };
 		2CC2B49621B8C26600FB4398 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC2B49521B8C26600FB4398 /* ViewController.swift */; };
 		2CC2B49921B8C26600FB4398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC2B49721B8C26600FB4398 /* Main.storyboard */; };
@@ -55,10 +59,14 @@
 /* Begin PBXFileReference section */
 		176940C73B97F640EB6DCD9A /* Pods_fairynews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fairynews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19EA3207E22373AFC2F0CE92 /* Pods-fairynewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fairynewsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fairynewsUITests/Pods-fairynewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		2C9C868721C79E50007BCA2A /* ApiDataMyCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDataMyCellModel.swift; sourceTree = "<group>"; };
-		2C9C868921C7D677007BCA2A /* MineDefaultTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineDefaultTableCell.swift; sourceTree = "<group>"; };
-		2C9C868B21C7F3B1007BCA2A /* MineGuanzhuTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineGuanzhuTableCell.swift; sourceTree = "<group>"; };
-		2C9C868D21C7FE2D007BCA2A /* MineDefaultTableCellRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineDefaultTableCellRowView.swift; sourceTree = "<group>"; };
+		2C9C868721C79E50007BCA2A /* ApiDtoMine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDtoMine.swift; sourceTree = "<group>"; };
+		2C9C868921C7D677007BCA2A /* MineView+DefaultTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MineView+DefaultTableCell.swift"; sourceTree = "<group>"; };
+		2C9C868B21C7F3B1007BCA2A /* MineView+GuanzhuTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MineView+GuanzhuTableCell.swift"; sourceTree = "<group>"; };
+		2C9C868D21C7FE2D007BCA2A /* MineView+DefaultTableCellRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MineView+DefaultTableCellRowView.swift"; sourceTree = "<group>"; };
+		2C9C869021C80204007BCA2A /* ApiDtoMine+MyTableCellDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApiDtoMine+MyTableCellDto.swift"; sourceTree = "<group>"; };
+		2C9C869221C802BC007BCA2A /* ApiDtoMine+MyGuanzhuDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApiDtoMine+MyGuanzhuDto.swift"; sourceTree = "<group>"; };
+		2C9C869421C805A3007BCA2A /* MineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineView.swift; sourceTree = "<group>"; };
+		2C9C869621C80774007BCA2A /* IApiDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IApiDto.swift; sourceTree = "<group>"; };
 		2CC2B49021B8C26600FB4398 /* fairynews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fairynews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC2B49321B8C26600FB4398 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CC2B49521B8C26600FB4398 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +140,14 @@
 				2DC107D9B3897A78CCC07821 /* Pods-fairynewsUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		2C9C868F21C801AB007BCA2A /* api */ = {
+			isa = PBXGroup;
+			children = (
+				2CC8924121C3875C0082334D /* MineApiService.swift */,
+			);
+			path = api;
 			sourceTree = "<group>";
 		};
 		2CC2B48721B8C26600FB4398 = {
@@ -212,6 +228,7 @@
 		2CC8922821C0A1E30082334D /* mine */ = {
 			isa = PBXGroup;
 			children = (
+				2C9C868F21C801AB007BCA2A /* api */,
 				2CC8922B21C0A20A0082334D /* controller */,
 				2CC8922D21C0A2190082334D /* view */,
 				2CC8922C21C0A2120082334D /* model */,
@@ -255,7 +272,9 @@
 		2CC8922C21C0A2120082334D /* model */ = {
 			isa = PBXGroup;
 			children = (
-				2C9C868721C79E50007BCA2A /* ApiDataMyCellModel.swift */,
+				2C9C869021C80204007BCA2A /* ApiDtoMine+MyTableCellDto.swift */,
+				2C9C869221C802BC007BCA2A /* ApiDtoMine+MyGuanzhuDto.swift */,
+				2C9C868721C79E50007BCA2A /* ApiDtoMine.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -263,9 +282,10 @@
 		2CC8922D21C0A2190082334D /* view */ = {
 			isa = PBXGroup;
 			children = (
-				2C9C868921C7D677007BCA2A /* MineDefaultTableCell.swift */,
-				2C9C868D21C7FE2D007BCA2A /* MineDefaultTableCellRowView.swift */,
-				2C9C868B21C7F3B1007BCA2A /* MineGuanzhuTableCell.swift */,
+				2C9C868921C7D677007BCA2A /* MineView+DefaultTableCell.swift */,
+				2C9C868D21C7FE2D007BCA2A /* MineView+DefaultTableCellRowView.swift */,
+				2C9C868B21C7F3B1007BCA2A /* MineView+GuanzhuTableCell.swift */,
+				2C9C869421C805A3007BCA2A /* MineView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -389,9 +409,9 @@
 		2CC8924021C0F5E20082334D /* apis */ = {
 			isa = PBXGroup;
 			children = (
-				2CC8924121C3875C0082334D /* MineApiService.swift */,
 				2CC8924321C389010082334D /* ApiConst.swift */,
 				2CC8924521C38C830082334D /* ApiResult.swift */,
+				2C9C869621C80774007BCA2A /* IApiDto.swift */,
 			);
 			path = apis;
 			sourceTree = "<group>";
@@ -635,15 +655,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CC8923821C0A8FC0082334D /* ConstDefine.swift in Sources */,
-				2C9C868A21C7D677007BCA2A /* MineDefaultTableCell.swift in Sources */,
+				2C9C868A21C7D677007BCA2A /* MineView+DefaultTableCell.swift in Sources */,
+				2C9C869321C802BC007BCA2A /* ApiDtoMine+MyGuanzhuDto.swift in Sources */,
+				2C9C869121C80204007BCA2A /* ApiDtoMine+MyTableCellDto.swift in Sources */,
 				2CC2B4C621BA4C8F00FB4398 /* HomeViewController.swift in Sources */,
 				2CC2B4C221B90D8300FB4398 /* MyTabBarController.swift in Sources */,
-				2C9C868C21C7F3B1007BCA2A /* MineGuanzhuTableCell.swift in Sources */,
+				2C9C868C21C7F3B1007BCA2A /* MineView+GuanzhuTableCell.swift in Sources */,
 				2CC8923F21C0BDC60082334D /* UIColor+Extension.swift in Sources */,
-				2C9C868821C79E50007BCA2A /* ApiDataMyCellModel.swift in Sources */,
+				2C9C868821C79E50007BCA2A /* ApiDtoMine.swift in Sources */,
 				2CC2B4C821BA4CA800FB4398 /* VideoViewController.swift in Sources */,
+				2C9C869721C80774007BCA2A /* IApiDto.swift in Sources */,
+				2C9C869521C805A3007BCA2A /* MineView.swift in Sources */,
 				2CC2B4CC21BA4CD400FB4398 /* MineViewController.swift in Sources */,
-				2C9C868E21C7FE2D007BCA2A /* MineDefaultTableCellRowView.swift in Sources */,
+				2C9C868E21C7FE2D007BCA2A /* MineView+DefaultTableCellRowView.swift in Sources */,
 				2CC2B4CA21BA4CBC00FB4398 /* HuoshanViewController.swift in Sources */,
 				2CC2B4CE21BA697900FB4398 /* MyTabBar.swift in Sources */,
 				2CC2B4C421B90DE900FB4398 /* MyNavigationController.swift in Sources */,

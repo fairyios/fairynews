@@ -38,12 +38,13 @@ final class MineViewController: UITableViewController{
         _apiService.loadMyCellData{(apiData: ApiDataMyCellModel?) in
             debugPrint("[MineViewController][func viewDidAppear()] 网络请求完成")
             
-            var firstSection = apiData?.sections.first!
             var guanzhu = MyCellModel()
             guanzhu.grey_text = ""
             guanzhu.text = "我的关注"
             guanzhu.tip_new = 0
             guanzhu.url = ""
+            
+            var firstSection = apiData?.sections.first!
             firstSection?.insert(guanzhu, at: 0)
             
             self.sections = (apiData?.sections)!

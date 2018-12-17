@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		04C982AC49DADF626F9D1DEA /* Pods_fairynewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329FA695DD966417AC30C9F5 /* Pods_fairynewsUITests.framework */; };
 		2C9C868821C79E50007BCA2A /* ApiDataMyCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C868721C79E50007BCA2A /* ApiDataMyCellModel.swift */; };
-		2C9C868A21C7D677007BCA2A /* MineCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C868921C7D677007BCA2A /* MineCellView.swift */; };
+		2C9C868A21C7D677007BCA2A /* MineTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C868921C7D677007BCA2A /* MineTableCellView.swift */; };
 		2CC2B49421B8C26600FB4398 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC2B49321B8C26600FB4398 /* AppDelegate.swift */; };
 		2CC2B49621B8C26600FB4398 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC2B49521B8C26600FB4398 /* ViewController.swift */; };
 		2CC2B49921B8C26600FB4398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC2B49721B8C26600FB4398 /* Main.storyboard */; };
@@ -54,7 +54,7 @@
 		176940C73B97F640EB6DCD9A /* Pods_fairynews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fairynews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19EA3207E22373AFC2F0CE92 /* Pods-fairynewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fairynewsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fairynewsUITests/Pods-fairynewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C9C868721C79E50007BCA2A /* ApiDataMyCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDataMyCellModel.swift; sourceTree = "<group>"; };
-		2C9C868921C7D677007BCA2A /* MineCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineCellView.swift; sourceTree = "<group>"; };
+		2C9C868921C7D677007BCA2A /* MineTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineTableCellView.swift; sourceTree = "<group>"; };
 		2CC2B49021B8C26600FB4398 /* fairynews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fairynews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC2B49321B8C26600FB4398 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CC2B49521B8C26600FB4398 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -259,7 +259,7 @@
 		2CC8922D21C0A2190082334D /* view */ = {
 			isa = PBXGroup;
 			children = (
-				2C9C868921C7D677007BCA2A /* MineCellView.swift */,
+				2C9C868921C7D677007BCA2A /* MineTableCellView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -629,7 +629,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CC8923821C0A8FC0082334D /* ConstDefine.swift in Sources */,
-				2C9C868A21C7D677007BCA2A /* MineCellView.swift in Sources */,
+				2C9C868A21C7D677007BCA2A /* MineTableCellView.swift in Sources */,
 				2CC2B4C621BA4C8F00FB4398 /* HomeViewController.swift in Sources */,
 				2CC2B4C221B90D8300FB4398 /* MyTabBarController.swift in Sources */,
 				2CC8923F21C0BDC60082334D /* UIColor+Extension.swift in Sources */,

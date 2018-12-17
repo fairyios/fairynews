@@ -34,7 +34,7 @@ final class MineViewController: UITableViewController{
         
         self.tableView.tableFooterView = UIView()
         self.tableView.backgroundColor = UIColor.globalBackgroundColor()
-        self.tableView.register(MineCellView.self, forCellReuseIdentifier: String(describing: MineCellView.self))
+        self.tableView.register(MineTableCellView.self, forCellReuseIdentifier: String(describing: MineTableCellView.self))
         
         _apiService.loadMyCellData{(apiData: ApiDataMyCellModel?) in
             debugPrint("[MineViewController][func viewDidAppear()] 网络请求完成")
@@ -137,7 +137,7 @@ extension MineViewController {
         let sectionModel = self.sections[indexPath.section]
         let sectionRow = sectionModel[indexPath.row]
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MineCellView.self), for: indexPath) as! MineCellView
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MineTableCellView.self), for: indexPath) as! MineTableCellView
         cell.leftLabel.text = sectionRow.text
         cell.rightLabel.text = sectionRow.grey_text
         return cell

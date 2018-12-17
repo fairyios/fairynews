@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-final class MineCellView : UITableViewCell {
+final class MineTableCellView : UITableViewCell {
     
     
     /// 左边的label

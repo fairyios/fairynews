@@ -66,7 +66,7 @@ public protocol TypeWrapperProtocol {
 
 
 // MARK: - 实际使用情况的例子
-//         如果想要对 String 扩展一个名为 test 的方法，方法返回自身内容。
+//         如果想要对 String 扩展一个名为 md5 的方法，方法返回自身内容。
 //         除了写成方法，为了更便于使用，定义成计算属性也是可以的，代码如下：
 extension String: FNNamespaceWrappable {
     

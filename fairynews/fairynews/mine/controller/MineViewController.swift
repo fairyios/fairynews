@@ -12,16 +12,9 @@ import Kingfisher
 final class MineViewController: UITableViewController {
     
     private let _apiService: IMineApiService = MineApiService() as IMineApiService
-
-    //"Attribute.DefineTableViewCell" 获取类名
-    //private let reuseIdentifier2: String = NSStringFromClass(UITableViewCell.self)
-    //"DefineTableViewCell" 获取类名
-    private let reuseIdentifier: String = String(describing: UITableViewCell.self)
-    
+ 
     private let heightForHeaderInSection: CGFloat = 15
-    
-    
-    private var sections: [[ApiDtoMine.MyTableCellDto]] = []
+    private var sections: [[ApiDtoMineMyTableCell]] = []
     
     
     
@@ -30,18 +23,18 @@ final class MineViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        debugPrint("[MineViewController][func viewDidLoad()]reuseIdentifier = \(self.reuseIdentifier)")
         debugPrint("[MineViewController][func viewDidLoad()]self.tableView.headerView(forSection: 0) = \(String(describing: self.tableView.headerView(forSection: 0)))")
         
         self.tableView.tableFooterView = UIView()
         self.tableView.backgroundColor = UIColor.globalBackgroundColor()
-        self.tableView.register(MineView.DefaultTableCell.self, forCellReuseIdentifier: String(describing: MineView.DefaultTableCell.self))
-        self.tableView.register(MineView.GuanzhuTableCell.self, forCellReuseIdentifier: String(describing: MineView.GuanzhuTableCell.self))
+        self.tableView.fn.registerCell(MineDefaultTableCell.self)
+        self.tableView.fn.registerCell(MineGuanzhuTableCell.self)
         
-        _apiService.loadMyCellData{(apiData: ApiDtoMine.MyTableCellOutDto?) in
+        
+        _apiService.loadMyCellData{(apiData: ApiDtoMineMyTableCellOut?) in
             debugPrint("[MineViewController][func viewDidAppear()] 网络请求完成")
             
-            var guanzhu = ApiDtoMine.MyTableCellDto()
+            var guanzhu = ApiDtoMineMyTableCell()
             guanzhu.grey_text = ""
             guanzhu.text = "我的关注"
             guanzhu.tip_new = 0
@@ -171,14 +164,13 @@ extension MineViewController {
         let sectionRow = sectionModel[indexPath.row]
         
         if indexPath.section == 0 && indexPath.row == 0 {
-            let guanzhu = MineView.GuanzhuTableCell(style: .default, reuseIdentifier: String(describing: MineView.GuanzhuTableCell.self))
+            let guanzhu = MineGuanzhuTableCell()
             guanzhu.firstLine.leftLabel.text = sectionRow.text
             guanzhu.firstLine.rightLabel.text = sectionRow.grey_text
             
             return guanzhu
         }
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MineView.DefaultTableCell.self), for: indexPath) as! MineView.DefaultTableCell
+        let cell = tableView.fn.dequeueReusableCell(MineDefaultTableCell.self, indexPath)
         cell.firstLine.leftLabel.text = sectionRow.text
         cell.firstLine.rightLabel.text = sectionRow.grey_text
         return cell

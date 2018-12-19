@@ -16,5 +16,5 @@ final class ApiConst {
     
     
     /// 设备id
-    public static let deviceId: String = "dssdkljfdslkf"
+    public static let deviceId: String = "6096495334"
 }

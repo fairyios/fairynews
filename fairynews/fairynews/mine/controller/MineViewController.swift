@@ -15,6 +15,7 @@ final class MineViewController: UITableViewController {
  
     private let heightForHeaderInSection: CGFloat = 15
     private var sections: [[ApiDtoMineMyTableCell]] = []
+    private var guanzhus: ApiDtoMineMyGuanzhuOut? = nil
     
     
     
@@ -46,6 +47,11 @@ final class MineViewController: UITableViewController {
             self.sections = (apiData?.sections)!
             self.sections[0] = firstSection!
             self.tableView.reloadData()
+            
+            self._apiService.loadMyGuanzhu({ (apiData) in
+                self.guanzhus = (apiData)
+                debugPrint(apiData?.data[1].get_user_auth_info())
+            })
         }
     }
     

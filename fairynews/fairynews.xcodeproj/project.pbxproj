@@ -18,6 +18,7 @@
 		2C9C869B21CA3474007BCA2A /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C869A21CA3474007BCA2A /* UITableView+Extension.swift */; };
 		2C9C869D21CA3E7E007BCA2A /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C869C21CA3E7E007BCA2A /* NSObject+Extension.swift */; };
 		2C9C869F21CA40A8007BCA2A /* Fairynews+Wrappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C869E21CA40A8007BCA2A /* Fairynews+Wrappable.swift */; };
+		2C9C86A121CA48BF007BCA2A /* IApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C86A021CA48BF007BCA2A /* IApiService.swift */; };
 		2CC2B49421B8C26600FB4398 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC2B49321B8C26600FB4398 /* AppDelegate.swift */; };
 		2CC2B49621B8C26600FB4398 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC2B49521B8C26600FB4398 /* ViewController.swift */; };
 		2CC2B49921B8C26600FB4398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC2B49721B8C26600FB4398 /* Main.storyboard */; };
@@ -71,6 +72,7 @@
 		2C9C869A21CA3474007BCA2A /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		2C9C869C21CA3E7E007BCA2A /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		2C9C869E21CA40A8007BCA2A /* Fairynews+Wrappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fairynews+Wrappable.swift"; sourceTree = "<group>"; };
+		2C9C86A021CA48BF007BCA2A /* IApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IApiService.swift; sourceTree = "<group>"; };
 		2CC2B49021B8C26600FB4398 /* fairynews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fairynews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC2B49321B8C26600FB4398 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CC2B49521B8C26600FB4398 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -418,6 +420,7 @@
 				2CC8924321C389010082334D /* ApiConst.swift */,
 				2CC8924521C38C830082334D /* ApiResult.swift */,
 				2C9C869621C80774007BCA2A /* IApiDto.swift */,
+				2C9C86A021CA48BF007BCA2A /* IApiService.swift */,
 			);
 			path = apis;
 			sourceTree = "<group>";
@@ -667,6 +670,7 @@
 				2C9C868A21C7D677007BCA2A /* MineDefaultTableCell.swift in Sources */,
 				2C9C869321C802BC007BCA2A /* ApiDtoMineMyGuanzhu.swift in Sources */,
 				2C9C869121C80204007BCA2A /* ApiDtoMineMyTableCell.swift in Sources */,
+				2C9C86A121CA48BF007BCA2A /* IApiService.swift in Sources */,
 				2CC2B4C621BA4C8F00FB4398 /* HomeViewController.swift in Sources */,
 				2C9C869F21CA40A8007BCA2A /* Fairynews+Wrappable.swift in Sources */,
 				2CC2B4C221B90D8300FB4398 /* MyTabBarController.swift in Sources */,

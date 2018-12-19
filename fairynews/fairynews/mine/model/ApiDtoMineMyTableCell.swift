@@ -11,7 +11,7 @@ import Foundation
 
 /// “我的”模块dto: MyTableCellOut
 public struct ApiDtoMineMyTableCellOut: Codable {
-    public var sections: [[ApiDtoMineMyTableCell]]
+    public var sections: [[ApiDtoMineMyTableCell]] = [[]]
 }
 /// “我的”模块dto: MyTableCell
 public struct ApiDtoMineMyTableCell: Codable {

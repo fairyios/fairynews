@@ -18,7 +18,7 @@ extension MineView {
         
         /// 第一行
         public lazy var firstLine: MineView.MineDefaultTableCellRowView = {
-            let view = MineView.MineDefaultTableCellRowView()
+            let view = MineView.MineDefaultTableCellRowView(true, true)
             return view
         }()
         

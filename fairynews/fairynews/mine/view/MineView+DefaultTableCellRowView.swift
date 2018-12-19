@@ -12,6 +12,12 @@ import SnapKit
 extension MineView {
     
     final class MineDefaultTableCellRowView: UIView {
+        
+        /// 是否显示右边的文本
+        private var isShowRightText = false
+        /// 是否显示中间的图标
+        private var isShowCenterLogo = false
+        
         /// 左边的label
         public lazy var leftLabel: UILabel = {
             var label = UILabel()
@@ -37,10 +43,28 @@ extension MineView {
             return imgView
         }()
         
+        // 中间的图标
+        public lazy var centerLogo: UIImageView = {
+            let imgView = UIImageView(image: UIImage(named: "setting_rightarrow_8x14_"))
+            imgView.frame.size.width = 30
+            imgView.frame.size.height = 30
+            return imgView
+        }()
         
         
         override init(frame: CGRect) {
             super.init(frame: frame)
+        }
+        /// <#Description#>
+        ///
+        /// - Parameters:
+        ///   - isShowRightText: 是否显示右边的文本
+        ///   - isShowCenterLogo: 是否显示中间的图标
+        convenience init(_ isShowRightText: Bool, _ isShowCenterLogo: Bool) {
+            self.init(frame: CGRect.zero)
+            
+            self.isShowRightText = isShowRightText
+            self.isShowCenterLogo = isShowCenterLogo
             
             //左边的label
             self.addSubview(self.leftLabel)

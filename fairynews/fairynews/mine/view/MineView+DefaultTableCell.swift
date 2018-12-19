@@ -17,9 +17,12 @@ extension MineView {
         
         /// 第一行
         public lazy var firstLine: MineDefaultTableCellRowView = {
-            let view = MineDefaultTableCellRowView()
+            let view = MineDefaultTableCellRowView(true, false)
             return view
         }()
+        
+        
+        
         
         override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
             super.init(style: style, reuseIdentifier: reuseIdentifier)
